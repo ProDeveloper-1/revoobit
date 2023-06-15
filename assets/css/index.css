@@ -1,0 +1,14 @@
+/*=================================================
+# Hero
+==================================================*/
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--white-color);
+}
