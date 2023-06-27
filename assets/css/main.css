@@ -53,6 +53,7 @@ main {
 .navbar .nav-brand .brand {
     width: 55px;
 }
+
 .navbar .nav-brand .brand-2 {
     width: 150px;
     margin-top: 3px;
@@ -75,12 +76,14 @@ main {
 
 .navbar-nav .nav-item {
     list-style: none;
+    position: relative;
 }
 
 .navbar-nav .nav-item .nav-link {
     text-decoration: none;
     color: var(--dark-color);
 }
+
 .navbar-nav .nav-item .nav-link:hover {
     color: var(--gray-color);
 }
@@ -89,9 +92,34 @@ main {
     color: var(--black-color);
     font-weight: bold;
     transition: color .3s ease;
+    transform: scaleX(1);
+    transform-origin: left;
 }
+
 .navbar-nav .nav-item .nav-link.active:hover {
     color: var(--gray-color);
+}
+
+.navbar-nav .nav-item .nav-link.active::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.nav-item .nav-link::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 25px;
+    height: 3px;
+    width: 70%;
+    background: var(--primary-color);
+    transform: scaleX(0);
+    transition: transform .4s linear;
+}
+
+.nav-item .nav-link:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 .navbar .social {
@@ -111,13 +139,135 @@ main {
 
 .navbar .social i:hover {
     color: var(--gray-color);
- }
+}
 
 .navbar a.btn {
     margin-right: 92px;
     outline: none;
     padding: 9px 40px;
 }
+
+.navbar #check-btn,
+.navbar #check {
+    display: none;
+}
+
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 1060px) {
+    .navbar .nav-brand {
+        margin-left: 0px;
+    }
+
+    .navbar #check-btn {
+        display: block;
+        margin-right: 40px;
+        cursor: pointer;
+        font-size: 25px;
+        color: var(--primary-color);
+        margin-top: 3px;
+    }
+
+    .navbar .navbar-nav {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background: var(--light-color);
+        top: 0;
+        left: -150%;
+        height: 1200px;
+        width: 100%;
+        margin-top: 70px;
+        padding: 30px 30px;
+        transition: all .8s;
+        border-top: 1px solid var(--light-gray-color);
+    }
+
+    .navbar #check:checked~.navbar-nav {
+        left: 0;
+    }
+
+    .navbar .social {
+        position: absolute;
+        background: var(--light-color);
+        top: 300px;
+        left: -150%;
+        height: 1px;
+        width: 100%;
+        margin-top: 70px;
+        padding: 40px 30px;
+        transition: all .8s;
+    }
+
+    .navbar #check:checked~.social {
+        left: 0;
+    }
+
+    .navbar .btn.login {
+        position: absolute;
+        background: var(--light-color);
+        top: 500px;
+        left: -150%;
+        height: 1px;
+        width: 80%;
+        margin-top: 70px;
+        padding: 40px 30px;
+        transition: all .8s;
+    }
+
+    .navbar #check:checked~.btn.login {
+        left: 0;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 15px 0;
+    }
+
+    .nav-item .nav-link {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .navbar #check-btn {
+        margin-right: 20px;
+    }
+
+    .navbar .nav-brand .brand {
+        width: 50px;
+        margin-left: 15px;
+    }
+
+    .navbar .nav-brand .brand-2 {
+        width: 130px;
+    }
+}
+
+@media only screen and (max-width: 326px) {
+    .navbar .nav-brand {
+        margin-left: -15px;
+    }
+
+    .navbar #check-btn {
+        font-size: 22px;
+    }
+
+    .navbar .navbar-nav {
+        padding: 40px 25px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .navbar .nav-brand {
+        margin-left: -15px;
+    }
+
+    .navbar #check-btn {
+        font-size: 18px;
+    }
+}
+
 
 /*=================================================
 # Footer
