@@ -260,7 +260,7 @@
     background-color: var(--primary-color);
     color: var(--white-color);
 }
-,
+
 .btn-primary {
     background-color: var(--primary-color);
     border: 2px solid var(--primary-color);
@@ -298,7 +298,7 @@
 .btn-secondary:hover {
     background-color: transparent;
     border: 2px solid var(--secondary-color);
-    color: var(--secondary-color);
+    color: var(--white-color);
 }
 
 .btn-outline-secondary {
