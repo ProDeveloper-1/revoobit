@@ -33,7 +33,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--primary-color);
+    background: var(--light-color);
     height: 75px;
     position: absolute;
     width: 100%;
@@ -79,19 +79,19 @@ main {
 
 .navbar-nav .nav-item .nav-link {
     text-decoration: none;
-    color: var(--light-color);
+    color: var(--dark-color);
 }
 .navbar-nav .nav-item .nav-link:hover {
-    color: var(--light-gray-color);
+    color: var(--gray-color);
 }
 
 .navbar-nav .nav-item .nav-link.active {
-    color: var(--white-color);
+    color: var(--black-color);
     font-weight: bold;
     transition: color .3s ease;
 }
 .navbar-nav .nav-item .nav-link.active:hover {
-    color: var(--light-gray-color);
+    color: var(--gray-color);
 }
 
 .navbar .social {
@@ -104,13 +104,13 @@ main {
 }
 
 .navbar .social i {
-    color: var(--light-color);
+    color: var(--dark-color);
     font-size: 20px;
     transition: color .3s ease;
 }
 
 .navbar .social i:hover {
-    color: var(--secondary-color);
+    color: var(--gray-color);
  }
 
 .navbar a.btn {

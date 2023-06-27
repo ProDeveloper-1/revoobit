@@ -304,7 +304,7 @@
 .btn-outline-secondary {
     background-color: transparent;
     border: 2px solid var(--secondary-color);
-    color: var(--secondary-color);
+    color: var(--white-color);
 }
 
 .btn-outline-secondary:hover {
