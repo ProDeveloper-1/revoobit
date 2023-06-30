@@ -247,6 +247,7 @@
     transition: all .3s ease;
     white-space: nowrap;
     text-decoration: none;
+    text-align: center;
 }
 
 .btn:hover,
