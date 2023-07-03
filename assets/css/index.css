@@ -83,6 +83,7 @@
         width: 100%;
     }
 }
+
 @media only screen and (max-width: 376px) {
     #hero {
         height: 800px;
@@ -106,6 +107,7 @@
         width: 100%;
     }
 }
+
 @media only screen and (max-width: 326px) {
     #hero {
         height: 800px;
@@ -131,3 +133,61 @@
 }
 
 @media only screen and (max-width: 300px) {}
+
+
+/*=================================================
+# Why
+==================================================*/
+#why {
+    padding: 60px 0;
+    background: var(--light-color);
+    color: var(--dark-color);
+}
+
+#why .why-img {
+    margin-top: 80px;
+}
+
+#why .why-img img {
+    width: 400px;
+}
+
+#why .why-txt {
+    margin-top: 40px;
+}
+
+#why .why-txt h3 {
+    text-transform: uppercase;
+    font-size: 40px;
+    color: var(--dark-color);
+}
+
+#why .why-txt .card {
+    border-left: 5px solid var(--primary-color);
+}
+
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 786px) {
+    #why .why-img img {
+        width: 100%;
+    }
+
+    #why .why-img {
+        margin-top: -20px;
+    }
+
+    #why .why-txt {
+        margin-top: -55px;
+    }
+
+    #why .why-txt h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #why .why-txt .card {
+        width: 100%;
+    }
+}
