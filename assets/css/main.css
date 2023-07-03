@@ -26,6 +26,10 @@ main {
     margin-top: 75px;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*=================================================
 # Header
 ==================================================*/
@@ -35,12 +39,13 @@ main {
     align-items: center;
     background: var(--light-color);
     height: 75px;
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1030;
+    border-bottom: 1px solid var(--light-gray-color);
 }
 
 .navbar .nav-brand {
@@ -276,10 +281,12 @@ main {
 
 #footer .col-brand {
     margin-top: 30px;
+    display: grid;
 }
 
 #footer img {
-    width: 250px;
+    width: 100px;
+    margin-left: -10px;
 }
 
 #footer .brand-text {
@@ -330,9 +337,13 @@ main {
     color: var(--gray-color);
 }
 
-/* #footer .contact-address i {
-    font-size: 20px;
-} */
+
+#footer .contact-address .location i {
+    margin-top: -5px;
+}
+#footer .contact-address .phone i {
+    margin-top: -2px;
+}
 
 #footer .contact-address .location,
 #footer .contact-address .web,

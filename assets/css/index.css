@@ -187,3 +187,115 @@
         text-align: center;
     }
 }
+
+/*=================================================
+# Miira-Cell
+==================================================*/
+#miira-cell {
+    background: var(--white-color);
+    color: var(--black-color);
+    padding: 65px 0;
+}
+
+#miira-cell .miira-cell-img {
+    margin-top: 50px;
+}
+
+#miira-cell .miira-cell-img img {
+    width: 400px;
+}
+
+#miira-cell .miira-cell-txt {
+    margin-top: 30px;
+}
+
+#miira-cell .miira-cell-txt h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: var(--dark-color);
+}
+
+#miira-cell .miira-cell-txt .card {
+    border-left: 5px solid var(--primary-color);
+}
+
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 786px) {
+    #miira-cell {
+        padding: 50px 0;
+    }
+    
+    #miira-cell .miira-cell-img img {
+        width: 100%;
+    }
+
+    #miira-cell .miira-cell-img {
+        margin-top: -10px;
+    }
+
+    #miira-cell .miira-cell-txt {
+        margin-top: 5px;
+    }
+
+    #miira-cell .miira-cell-txt h2 {
+        font-size: 35px;
+    }
+}
+
+/*=================================================
+# Miira-Curve
+==================================================*/
+#miira-curve {
+    background: var(--light-color);
+    color: var(--black-color);
+    padding: 65px 0;
+}
+
+#miira-curve .miira-curve-img {
+    margin-top: 50px;
+}
+
+#miira-curve .miira-curve-img img {
+    width: 400px;
+}
+
+#miira-curve .miira-curve-txt {
+    margin-top: 30px;
+}
+
+#miira-curve .miira-curve-txt h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: var(--dark-color);
+}
+
+#miira-curve .miira-curve-txt .card {
+    border-left: 5px solid var(--primary-color);
+}
+
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 786px) {
+    #miira-curve {
+        padding: 50px 0;
+    }
+    
+    #miira-curve .miira-curve-img img {
+        width: 100%;
+    }
+
+    #miira-curve .miira-curve-img {
+        margin-top: -10px;
+    }
+
+    #miira-curve .miira-curve-txt {
+        margin-top: 5px;
+    }
+
+    #miira-curve .miira-curve-txt h2 {
+        font-size: 35px;
+    }
+}
