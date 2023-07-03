@@ -278,31 +278,13 @@ main {
     margin-top: 30px;
 }
 
-#footer .col-brand>* {
-    margin-top: 30px;
-}
-
 #footer img {
     width: 250px;
 }
 
-#footer .footer-text h1 {
-    font-size: 60px;
-}
-
-#footer .footer-text p {
-    font-weight: 300;
-    margin-top: -20px;
-    padding-right: 60px;
-    line-height: 1.7em;
-}
-
 #footer .brand-text {
-    font-size: 30px;
-}
-
-#footer .hr-brand {
-    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 #footer .social {
@@ -310,7 +292,6 @@ main {
     justify-content: start;
     align-items: center;
     gap: 1.2rem;
-    margin-right: 90px;
 }
 
 #footer .social a {
@@ -319,12 +300,12 @@ main {
     align-items: center;
     text-decoration: none;
     color: var(--light-gray-color);
-    font-size: 22px;
+    font-size: 18px;
     transition: all .3s;
     border: 1px solid var(--light-gray-color);
     border-radius: 50%;
-    height: 35px;
-    width: 35px;
+    height: 32px;
+    width: 32px;
 }
 
 #footer .social a:hover {
@@ -335,7 +316,7 @@ main {
     display: flex;
     align-items: flex-start;
     flex-flow: column wrap;
-    gap: 1.2rem;
+    gap: 1rem;
 }
 
 #footer nav a {
@@ -346,8 +327,12 @@ main {
 }
 
 #footer nav a:hover {
-    color: var(--primary-color);
+    color: var(--gray-color);
 }
+
+/* #footer .contact-address i {
+    font-size: 20px;
+} */
 
 #footer .contact-address .location,
 #footer .contact-address .web,
