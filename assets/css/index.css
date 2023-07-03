@@ -145,7 +145,7 @@
 }
 
 #why .why-img {
-    margin-top: 80px;
+    margin-top: 75px;
 }
 
 #why .why-img img {
@@ -158,7 +158,7 @@
 
 #why .why-txt h3 {
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 30px;
     color: var(--dark-color);
 }
 
