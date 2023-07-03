@@ -192,8 +192,8 @@
 # Miira-Cell
 ==================================================*/
 #miira-cell {
-    background: var(--white-color);
-    color: var(--black-color);
+    background: var(--primary-color);
+    color: var(--light-color);
     padding: 65px 0;
 }
 
