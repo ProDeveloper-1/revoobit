@@ -262,3 +262,225 @@ main {
 /*=================================================
 # Footer
 ==================================================*/
+#footer {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bg/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--light-color);
+    padding: 65px 0;
+    position: relative;
+}
+
+#footer .col-brand {
+    margin-top: 30px;
+}
+
+#footer .col-brand>* {
+    margin-top: 30px;
+}
+
+#footer img {
+    width: 250px;
+}
+
+#footer .footer-text h1 {
+    font-size: 60px;
+}
+
+#footer .footer-text p {
+    font-weight: 300;
+    margin-top: -20px;
+    padding-right: 60px;
+    line-height: 1.7em;
+}
+
+#footer .brand-text {
+    font-size: 30px;
+}
+
+#footer .hr-brand {
+    margin-right: 20px;
+}
+
+#footer .social {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1.2rem;
+    margin-right: 90px;
+}
+
+#footer .social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--light-gray-color);
+    font-size: 22px;
+    transition: all .3s;
+    border: 1px solid var(--light-gray-color);
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+}
+
+#footer .social a:hover {
+    color: var(--gray-color);
+}
+
+#footer nav {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column wrap;
+    gap: 1.2rem;
+}
+
+#footer nav a {
+    color: var(--light-gray-color);
+    text-decoration: none;
+    font-size: 17px;
+    transition: all .3s;
+}
+
+#footer nav a:hover {
+    color: var(--primary-color);
+}
+
+#footer .contact-address .location,
+#footer .contact-address .web,
+#footer .contact-address .email,
+#footer .contact-address .phone {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    margin: 20px 0;
+    gap: 1.5rem;
+}
+
+#footer .hr-copy {
+    margin: 50px 0 0px 0;
+}
+
+#footer .copyright {
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/* == Go-Top == */
+
+.go_top {
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .5s;
+}
+
+.go_top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.go_top a {
+    background: var(--secondary-color);
+    color: var(--light-color);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    font-size: 27px;
+    transition: all .5s;
+    animation: colur 1s infinite alternate;
+}
+
+.go_top a:hover {
+    background: var(--primary-color);
+    color: var(--light-color);
+    transition: all .5s;
+    animation: colour 1s infinite alternate;
+}
+
+
+.go_top .fa-angle-up {
+    margin-top: 12px;
+    margin-left: 17px;
+}
+
+@keyframes colur {
+    from {
+        color: var(--light-gray-color);
+    }
+
+    to {
+        color: var(--light-color);
+    }
+}
+
+@keyframes colour {
+    from {
+        color: var(--light-color);
+    }
+
+    to {
+        color: var(--light-gray-color);
+    }
+}
+
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width:1060px) {
+    #footer .row {
+        flex-flow: column wrap;
+    }
+
+    #footer .footer-img img {
+        width: 100%;
+    }
+
+    #footer .footer-text h1 {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #footer {
+        padding-top: 40px;
+    }
+
+    #footer .footer-img img {
+        width: 100%;
+    }
+
+    #footer .footer-text {
+        margin-top: -30px;
+    }
+
+    #footer nav {
+        display: flex;
+        justify-content: start;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    #footer .row {
+        align-items: start;
+    }
+
+    #footer .footer-text h1 {
+        font-size: 40px;
+    }
+
+    #footer .footer-text p {
+        margin-top: -5px;
+        padding-right: 0px;
+    }
+}
