@@ -333,7 +333,7 @@
 .btn-outline-warning {
     background-color: transparent;
     border: 2px solid var(--warning-color);
-    color: var(--black-color);
+    color: var(--white-color);
 }
 
 .btn-outline-warning:hover {
