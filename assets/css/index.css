@@ -139,7 +139,7 @@
 # Why
 ==================================================*/
 #why {
-    padding: 60px 0;
+    padding: 30px 0 20px 0;
     background: var(--light-color);
     color: var(--dark-color);
 }
@@ -171,6 +171,9 @@
 /* ==== Media Queries ==== */
 
 @media only screen and (max-width: 786px) {
+    #why {
+        padding: 45px 0 0px 0;
+    }
     #why .why-img img {
         width: 100%;
     }
@@ -190,150 +193,50 @@
 }
 
 /*=================================================
-# Miira-Cell
+# Miira-Care
 ==================================================*/
-#miira-cell {
-    background: var(--white-color);
-    color: var(--white-color);
-    padding: 65px 0;
+#miira-care {
+    background: var(--light-color);
+    color: var(--black-color);
+    padding: 5px 0 65px 0;
 }
 
-#miira-cell .container {
+#miira-care .container {
     padding: 0 0px;
 }
 
-#miira-cell .row {
+#miira-care .row {
     gap: 1em;
 }
 
+#miira-care h1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#miira-care h1::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 7px;
+    bottom: 0;
+    background: var(--warning-color);
+    border-radius: 5px;
+}
 
 /* ==== Media Queries ==== */
 
 @media only screen and (max-width: 786px) {
-    #miira-cell .container {
-        padding: 0 20px;
+    #miira-care {
+        padding: 25px 0 45px 0;
     }
-    #miira-cell h1 {
+    
+    #miira-care .container {
+        padding: 0 12px;
+    }
+    #miira-care h1 {
         font-size: 50px;
-    }
-}
-
-/*=================================================
-# Miira-Phyll
-==================================================*/
-#miira-phyll {
-    background: var(--light-color);
-    color: var(--black-color);
-    padding: 100px 0;
-}
-
-#miira-phyll .miira-phyll-img {
-    margin-top: 50px;
-}
-
-#miira-phyll .miira-phyll-img img {
-    width: 450px;
-}
-
-#miira-phyll .miira-phyll-txt {
-    margin-top: 0px;
-}
-
-#miira-phyll .miira-phyll-txt h3 {
-    text-transform: uppercase;
-    font-size: 30px;
-    color: var(--dark-color);
-}
-
-#miira-phyll .miira-phyll-txt p {
-    text-align: justify;
-}
-
-#miira-phyll .miira-phyll-txt .card {
-    border-left: 5px solid var(--primary-color);
-}
-
-
-/* ==== Media Queries ==== */
-
-@media only screen and (max-width: 786px) {
-    #miira-phyll {
-        padding: 50px 0;
-    }
-
-    #miira-phyll .miira-phyll-img img {
-        width: 100%;
-    }
-
-    #miira-phyll .miira-phyll-img {
-        margin-top: 10px;
-    }
-
-    #miira-phyll .miira-phyll-txt {
-        margin-top: -20px;
-        margin-bottom: 10px;
-    }
-
-    #miira-phyll .miira-phyll-txt h2 {
-        font-size: 35px;
-    }
-}
-
-/*=================================================
-# Miira-Curve
-==================================================*/
-#miira-curve {
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/products/miira-curve/mc.jpg);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    color: var(--white-color);
-    padding: 100px 0;
-}
-
-#miira-curve .miira-curve-img {
-    margin-top: 50px;
-}
-
-#miira-curve .miira-curve-img img {
-    width: 350px;
-}
-
-#miira-curve .miira-curve-txt {
-    margin-top: 0px;
-}
-
-#miira-curve .miira-curve-txt h3 {
-    text-transform: uppercase;
-    font-size: 30px;
-    color: var(--dark-color);
-}
-
-#miira-curve .miira-curve-txt p {
-    text-align: justify;
-}
-
-/* ==== Media Queries ==== */
-
-@media only screen and (max-width: 786px) {
-    #miira-curve {
-        padding: 50px 0;
-    }
-
-    #miira-curve .miira-curve-img img {
-        width: 100%;
-    }
-
-    #miira-curve .miira-curve-img {
-        margin-top: 10px;
-    }
-
-    #miira-curve .miira-curve-txt {
-        margin-top: -20px;
-        margin-bottom: 10px;
-    }
-
-    #miira-curve .miira-curve-txt h2 {
-        font-size: 35px;
     }
 }
