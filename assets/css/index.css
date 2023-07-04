@@ -193,69 +193,28 @@
 # Miira-Cell
 ==================================================*/
 #miira-cell {
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/products/miira-cell/m+.jpg);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: var(--white-color);
     color: var(--white-color);
-    padding: 100px 0;
+    padding: 65px 0;
 }
 
-
-
-#miira-cell .miira-cell-img {
-    margin-top: 50px;
+#miira-cell .container {
+    padding: 0 0px;
 }
 
-#miira-cell .miira-cell-img img {
-    width: 350px;
-}
-
-#miira-cell .miira-cell-txt {
-    margin-top: 0px;
-}
-
-#miira-cell .miira-cell-txt h3 {
-    text-transform: uppercase;
-    font-size: 30px;
-    color: var(--dark-color);
-}
-
-#miira-cell .miira-cell-txt p {
-    text-align: justify;
-}
-
-#miira-cell .miira-cell-txt .card {
-    border-left: 5px solid var(--primary-color);
+#miira-cell .row {
+    gap: 1em;
 }
 
 
 /* ==== Media Queries ==== */
 
 @media only screen and (max-width: 786px) {
-    #miira-cell {
-        padding: 50px 0;
+    #miira-cell .container {
+        padding: 0 20px;
     }
-
-    #miira-cell .miira-cell-img img {
-        width: 100%;
-    }
-
-    #miira-cell .miira-cell-img {
-        margin-top: 0px;
-    }
-
-    #miira-cell .miira-cell-txt {
-        margin-top: -30px;
-        margin-bottom: 20px;
-    }
-
-    #miira-cell .miira-cell-txt h2 {
-        font-size: 35px;
-    }
-
-    #miira-cell .miira-cell-txt p {
-        text-align: justify;
+    #miira-cell h1 {
+        font-size: 50px;
     }
 }
 
