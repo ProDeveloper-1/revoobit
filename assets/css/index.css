@@ -164,6 +164,7 @@
 
 #why .why-txt .card {
     border-left: 5px solid var(--primary-color);
+    text-align: justify;
 }
 
 
@@ -220,6 +221,10 @@
     color: var(--dark-color);
 }
 
+#miira-cell .miira-cell-txt p {
+    text-align: justify;
+}
+
 #miira-cell .miira-cell-txt .card {
     border-left: 5px solid var(--primary-color);
 }
@@ -268,7 +273,7 @@
 }
 
 #miira-phyll .miira-phyll-img img {
-    width: 350px;
+    width: 450px;
 }
 
 #miira-phyll .miira-phyll-txt {
@@ -279,6 +284,10 @@
     text-transform: uppercase;
     font-size: 30px;
     color: var(--dark-color);
+}
+
+#miira-phyll .miira-phyll-txt p {
+    text-align: justify;
 }
 
 #miira-phyll .miira-phyll-txt .card {
@@ -298,11 +307,12 @@
     }
 
     #miira-phyll .miira-phyll-img {
-        margin-top: -10px;
+        margin-top: 10px;
     }
 
     #miira-phyll .miira-phyll-txt {
-        margin-top: 5px;
+        margin-top: -20px;
+        margin-bottom: 10px;
     }
 
     #miira-phyll .miira-phyll-txt h2 {
@@ -356,11 +366,12 @@
     }
 
     #miira-curve .miira-curve-img {
-        margin-top: -10px;
+        margin-top: 10px;
     }
 
     #miira-curve .miira-curve-txt {
-        margin-top: 5px;
+        margin-top: -20px;
+        margin-bottom: 10px;
     }
 
     #miira-curve .miira-curve-txt h2 {
