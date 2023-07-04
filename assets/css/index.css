@@ -192,8 +192,8 @@
 # Miira-Cell
 ==================================================*/
 #miira-cell {
-    background: var(--primary-color);
-    color: var(--light-color);
+    background: var(--white-color);
+    color: var(--black-color);
     padding: 65px 0;
 }
 
@@ -202,7 +202,7 @@
 }
 
 #miira-cell .miira-cell-img img {
-    width: 400px;
+    width: 350px;
 }
 
 #miira-cell .miira-cell-txt {
@@ -258,7 +258,7 @@
 }
 
 #miira-curve .miira-curve-img img {
-    width: 400px;
+    width: 350px;
 }
 
 #miira-curve .miira-curve-txt {
