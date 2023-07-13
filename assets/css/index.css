@@ -174,6 +174,7 @@
     #why {
         padding: 45px 0 0px 0;
     }
+
     #why .why-img img {
         width: 100%;
     }
@@ -198,7 +199,7 @@
 #miira-care {
     background: var(--light-color);
     color: var(--black-color);
-    padding: 5px 0 65px 0;
+    padding: 5px 0 45px 0;
 }
 
 #miira-care .container {
@@ -209,19 +210,29 @@
     gap: 1em;
 }
 
-#miira-care h1 {
+#miira-care img {
+    width: 350px;
+}
+
+#miira-care .heading-txt {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    color: var(--black-color);
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: 600;
 }
 
-#miira-care h1::before {
+#miira-care .heading-txt::before {
     content: '';
     position: absolute;
     width: 100px;
     height: 7px;
     bottom: 0;
+    top: 65px;
     background: var(--warning-color);
     border-radius: 5px;
 }
@@ -230,13 +241,82 @@
 
 @media only screen and (max-width: 786px) {
     #miira-care {
-        padding: 25px 0 45px 0;
+        padding: 40px 0 45px 0;
     }
-    
+
     #miira-care .container {
         padding: 0 20px;
     }
-    #miira-care h1 {
-        font-size: 50px;
+
+    #miira-care .heading-txt {
+        font-size: 30px;
+    }
+
+    #miira-care .heading-txt::before {
+        top: 50px;
+    }
+}
+
+/*=================================================
+# Testimonials
+==================================================*/
+#testimonials {
+    background: var(--light-color);
+    color: var(--black-color);
+    padding: 5px 0 65px 0;
+}
+
+#testimonials .container {
+    padding: 0 0px;
+}
+
+#testimonials .row {
+    gap: 1em;
+}
+
+#testimonials img {
+    width: 350px;
+}
+
+#testimonials .heading-txt {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--black-color);
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#testimonials .heading-txt::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 7px;
+    bottom: 0;
+    top: 65px;
+    background: var(--warning-color);
+    border-radius: 5px;
+}
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 786px) {
+    #testimonials {
+        padding: 0px 0 45px 0;
+    }
+
+    #testimonials .container {
+        padding: 0 20px;
+    }
+
+    #testimonials .heading-txt {
+        font-size: 30px;
+    }
+
+    #testimonials .heading-txt::before {
+        top: 50px;
     }
 }
