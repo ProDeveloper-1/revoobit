@@ -275,11 +275,36 @@
 }
 
 #testimonials .row {
-    gap: 1em;
+    gap: 0.5em;
+    padding-top: 65px;
+}
+
+#testimonials .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    border: 1px solid var(--warning-color);
+    position: relative;
+}
+
+#testimonials .fas {
+    position: absolute;
+    right: 30px;
+}
+#testimonials .img {
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: -60px;
 }
 
 #testimonials img {
-    width: 350px;
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+    object-fit: cover;
 }
 
 #testimonials .heading-txt {
@@ -323,4 +348,9 @@
     #testimonials .heading-txt::before {
         top: 50px;
     }
+/* 
+    #testimonials .row :nth-child(2) {
+        top: 75px;
+    } */
+
 }
