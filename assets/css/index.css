@@ -175,6 +175,10 @@
         padding: 45px 0 0px 0;
     }
 
+    #why .container {
+        padding: 0 20px;
+    }
+
     #why .why-img img {
         width: 100%;
     }
@@ -267,7 +271,7 @@
 }
 
 #testimonials .container {
-    padding: 0 0px;
+    padding: 0 40px;
 }
 
 #testimonials .row {
