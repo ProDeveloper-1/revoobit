@@ -159,16 +159,27 @@
 #why .why-txt h3 {
     text-transform: uppercase;
     font-size: 30px;
-    color: var(--dark-color);
+    color: var(--black-color);
 }
 
 #why .why-txt .card {
-    border-left: 5px solid var(--primary-color);
+    position: relative;
     text-align: justify;
+    border-radius: unset;
+}
+
+#why .why-txt .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 19px;
+    background: var(--primary-color);
 }
 
 #why .why-txt .card.events {
-   margin-top: 23px;
+    margin-top: 23px;
 }
 
 
@@ -199,9 +210,10 @@
         font-size: 25px;
         text-align: center;
     }
+
     #why .why-txt .card.events {
         margin-top: 5px;
-     }
+    }
 }
 
 /*=================================================
@@ -275,13 +287,25 @@
     color: var(--white-color);
     font-size: 16px;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* #miira-care .overlay-content {
+    color: var(--white-color);
+    font-size: 16px;
+    position: absolute;
     top: 37%;
     left: 37%;
     -webkit-transform: translate(-30%, -30%);
     -ms-transform: translate(-30%, -30%);
     transform: translate(-30%, -30%);
     text-align: center;
-}
+} */
 
 #miira-care .overlay-content p {
     text-decoration: none;
