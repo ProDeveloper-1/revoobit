@@ -387,7 +387,7 @@ a {
 }
 
 .go_top a {
-    background: var(--secondary-color);
+    background: var(--warning-color);
     color: var(--light-color);
     border-radius: 50%;
     height: 50px;
