@@ -144,6 +144,22 @@
     border-radius: 5px;
 }
 
+#faq .fa-question-circle {
+    margin-right: 10px;
+}
+
+#faq .question {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#faq .fa-angle-down,
+#faq .fa-angle-up {
+    margin-left: 10px;
+    font-size: 25px;
+}
+
 /* ==== Media Queries ==== */
 
 @media only screen and (max-width: 786px) {
@@ -157,5 +173,10 @@
 
     #faq .heading-txt::before {
         top: 50px;
+    }
+
+    #faq .fa-angle-down,
+    #faq .fa-angle-up {
+        margin-left: 10px;
     }
 }
