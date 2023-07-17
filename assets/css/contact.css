@@ -109,6 +109,29 @@
     color: var(--dark-color);
 }
 
+#contact .heading-txt {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--black-color);
+    margin-top: 35px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#contact .heading-txt::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 7px;
+    bottom: 0;
+    top: 65px;
+    background: var(--warning-color);
+    border-radius: 5px;
+}
+
 #contact .contact-txt {
     margin-top: 40px;
 }
@@ -161,13 +184,13 @@
     background: var(--primary-color);
     color: var(--white-color);
     cursor: pointer;
-    transition: background .3s;
+    transition: all .3s;
     border-left: 0px solid var(--primary-color);
 
 }
 
 #contact form .send:hover {
-    background: var(--secondary-color);
+    opacity: .8;
 }
 
 #contact .contact-form .inputs-text-box {
@@ -187,6 +210,16 @@
 
     #contact .container {
         padding: 0 30px;
+    }
+
+    #contact .heading-txt {
+        font-size: 30px;
+        margin-top: 5px;
+        margin-bottom: 25px;
+    }
+
+    #contact .heading-txt::before {
+        top: 50px;
     }
 
     #contact .contact-txt {
