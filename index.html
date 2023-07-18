@@ -24,9 +24,11 @@
     <!-- === Font Awesome Online === -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <!-- === Font Awesome Offline === -->
-    <link rel="stylesheet" href="assets/vendors/fontawesome-free-5.15.2-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/vendor/fontawesome-free-5.15.2-web/css/all.min.css">
     <!-- === Link Swiper's CSS === -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- === AOS (Animation On Scroll CSS) === -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
     <!-- === CSS === -->
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/utilities.css">
@@ -104,7 +106,7 @@
         <section id="hero">
             <div class="container">
                 <div class="row">
-                    <div class="hero-txt">
+                    <div class="hero-txt" data-aos="fade-down" data-aos-delay="100">
                         <h3 class="">
                             Stay healthier, Get wealthier
                         </h3>
@@ -114,7 +116,7 @@
                         <a href="https://panel.revoobit.com/user/login" class="btn btn-outline-secondary mt-3"
                             rel="noopener noreferrer">Get started</a>
                     </div>
-                    <div class="hero-img">
+                    <div class="hero-img" data-aos="fade-up" data-aos-delay="100">
                         <img src="assets/img/products/bidhaa2.png" alt="">
                     </div>
                 </div>
@@ -125,13 +127,13 @@
         <section id="why">
             <div class="container">
                 <div class="row">
-                    <div class="why-img">
+                    <div class="why-img" data-aos="fade-right" data-aos-delay="100">
                         <img src="assets/img/logo/revoobit.png" alt="">
                     </div>
                     <div class="why-txt">
-                        <h3 class="text-start">Why Revoobit Tanzania?</h3>
+                        <h3 class="text-start" data-aos="fade-left" data-aos-delay="100">Why Revoobit Tanzania?</h3>
                         <div class="flex-space-between">
-                            <div class="card p-3 mt-2 opportunity">
+                            <div class="card p-3 mt-2 opportunity" data-aos="fade-right" data-aos-delay="100">
                                 <h2>Opportunity</h2>
                                 <p>
                                     We provide you the opportunity to own your own business and be your own boss with
@@ -140,7 +142,7 @@
                                     systems & strategies.
                                 </p>
                             </div>
-                            <div class="card p-3 events">
+                            <div class="card p-3 events" data-aos="fade-left" data-aos-delay="100">
                                 <h2>Events & News</h2>
                                 <p>
                                     Embark on a life-transformation journey and live life to the fullest. Check out our
@@ -148,7 +150,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="card p-3 products">
+                        <div class="card p-3 products" data-aos="fade-right" data-aos-delay="100">
                             <h2>Products</h2>
                             <p>
                                 Revoobit provides the best products for everyone with proven results & testimonials.
@@ -165,9 +167,9 @@
         <!-- === Miira-Care === -->
         <section id="miira-care">
             <div class="container">
-                <h1 class="heading-txt">Featured Products</h1>
+                <h1 class="heading-txt" data-aos="fade-right" data-aos-delay="100">Featured Products</h1>
                 <div class="row">
-                    <div class="col">
+                    <div class="col" data-aos="fade-up" data-aos-delay="100">
                         <img src="assets/img/products/miira-cell/cell.jpg" alt="">
                         <div class="overlay">
                             <div class="overlay-content">
@@ -180,7 +182,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col" data-aos="fade-up" data-aos-delay="100">
                         <img src="assets/img/products/miira-coffee/coffee.jpg" alt="">
                         <div class="overlay">
                             <div class="overlay-content">
@@ -195,7 +197,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col" data-aos="fade-up" data-aos-delay="100">
                         <img src="assets/img/products/miira-tiara/tiara.jpg" alt="">
                         <div class="overlay">
                             <div class="overlay-content">
@@ -214,9 +216,9 @@
         <!-- === Testimonials === -->
         <section id="testimonials">
             <div class="container">
-                <h1 class="heading-txt">Testimonials</h1>
+                <h1 class="heading-txt" data-aos="fade-down" data-aos-delay="100">Testimonials</h1>
                 <div class="row">
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-delay="100">
                         <div class="img">
                             <img src="assets/img/person/gasto.jpg" alt="">
                         </div>
@@ -229,7 +231,7 @@
                             <i class="fas fa-quote-right"></i>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-delay="100">
                         <div class="img">
                             <img src="assets/img/person/cathy.jpg" alt="">
                         </div>
@@ -242,7 +244,7 @@
                             <i class="fas fa-quote-right"></i>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-delay="100">
                         <div class="img">
                             <img src="assets/img/person/noel.jpg" alt="">
                         </div>
@@ -271,7 +273,6 @@
                     <nav class="footer-nav">
                         <a href="#home">Home</a>
                         <a href="pages/about.html">About</a>
-                        <a href="pages/products.html">Products</a>
                         <a href="pages/testimonials.html">Testimonials</a>
                         <a href="pages/faq.html">FAQ</a>
                         <a href="pages/contact.html">Contact</a>
@@ -336,9 +337,11 @@
         integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
         crossorigin="anonymous"></script>
     <!-- jQuery Offline -->
-    <script src="assets/vendors/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- AOS (Animation On Scroll JS) -->
+    <script src="assets/vendor/aos/aos.js"></script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/index.js"></script>

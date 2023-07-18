@@ -53,3 +53,11 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+/* ==================================================
+#  Initialize AOS
+===================================================*/
+AOS.init({
+    duration: 800,
+    easing: "ease-in-out"
+});
