@@ -31,6 +31,16 @@ a {
     text-decoration: none;
 }
 
+@keyframes zoom-in {
+    from {
+        transform: scale(0.9);
+    }
+
+    to {
+        transform: scale(1.0);
+    }
+}
+
 /*=================================================
 # Header
 ==================================================*/
@@ -137,6 +147,7 @@ a {
     margin-top: 3px;
     transition: all .3s;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    animation: zoom-in .3s alternate forwards ease-in-out;
 }
 
 .navbar .dropdown .dropdown-menu .nav-item {
