@@ -25,8 +25,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <!-- === Font Awesome Offline === -->
     <link rel="stylesheet" href="../assets/vendor/fontawesome-free-5.15.2-web/css/all.min.css">
-    <!-- === Link Swiper's CSS === -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- === AOS (Animation On Scroll CSS) Online === -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- === AOS (Animation On Scroll CSS) Offline === -->
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
     <!-- === CSS === -->
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/utilities.css">
@@ -116,9 +118,9 @@
         <!-- === Contact === -->
         <section id="contact">
             <div class="container">
-                <h1 class="heading-txt">Contact</h1>
+                <h1 class="heading-txt" data-aos="fade-right" data-aos-delay="100">Contact</h1>
                 <div class="row">
-                    <div class="contact-txt">
+                    <div class="contact-txt" data-aos="fade-right" data-aos-delay="100">
                         <div class="card p-3 mt-2 opportunity">
                             <h2>LOCATION</h2>
                             <p>
@@ -144,7 +146,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="contact-form">
+                    <div class="contact-form" data-aos="fade-left" data-aos-delay="100">
                         <h3>Leave a Message</h3>
                         <form action="#">
                             <div class="inputs-text-box">
@@ -249,11 +251,13 @@
         crossorigin="anonymous"></script>
     <!-- jQuery Offline -->
     <script src="../assets/vendor/jquery/jquery.min.js"></script>
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- AOS (Animation On Scroll JS) Online -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- AOS (Animation On Scroll JS) Offline -->
+    <script src="../assets/vendor/aos/aos.js"></script>
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>
-    <script src="../assets/js/about.js"></script>
+    <script src="../assets/js/contact.js"></script>
     <!-- End Scripts -->
 </body>
 

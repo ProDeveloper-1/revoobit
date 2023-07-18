@@ -3,8 +3,8 @@
 ==================================================*/
 $(document).ready(function () {
 
-    $(".answer").hide();
-    $(".fa-angle-up").hide();
+    $("#faq .answer").hide();
+    $("#faq .fa-angle-up").hide();
 
     // Question 1
     $(".question_1 .fa-angle-down").click(function () {
