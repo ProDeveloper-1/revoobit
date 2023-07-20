@@ -38,6 +38,7 @@ window.addEventListener('scroll', () => {
 #  Initialize AOS
 ===================================================*/
 AOS.init({
-    duration: 800,
+    offset: 100,
+    duration: 1000,
     easing: "ease-in-out"
 });
