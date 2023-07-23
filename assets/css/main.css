@@ -327,7 +327,8 @@ a {
 # Footer
 ==================================================*/
 #footer {
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bg/bg.jpg);
+    /* background: linear-gradient(360deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bg/bg.jpg); */
+    background: var(--primary-color);
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
@@ -366,12 +367,9 @@ a {
     align-items: center;
     text-decoration: none;
     color: var(--light-gray-color);
-    font-size: 18px;
+    font-size: 20px;
     transition: all .3s;
-    border: 1px solid var(--light-gray-color);
-    border-radius: 50%;
-    height: 32px;
-    width: 32px;
+    margin: 0 5px;
 }
 
 #footer .social a:hover {
@@ -417,14 +415,13 @@ a {
 }
 
 #footer .hr-copy {
-    margin: 50px 0 0px 0;
+    margin: 30px 0 0px 0;
 }
 
 #footer .copyright {
     text-align: center;
     margin-top: 30px;
 }
-
 
 /* == Go-Top == */
 
@@ -538,5 +535,21 @@ a {
     #footer .footer-text p {
         margin-top: -5px;
         padding-right: 0px;
+    }
+
+    #footer .copyright {
+        margin-bottom: 30px;
+    }
+
+    #footer .col-links {
+        margin-top: -20px;
+    }
+
+    #footer .col-address {
+        margin-top: -10px;
+    }
+
+    #footer .social-media {
+        margin-top: -30px;
     }
 }
