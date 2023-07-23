@@ -478,9 +478,11 @@
     position: relative;
 }
 
-#testimonials .fas {
-    position: absolute;
-    right: 30px;
+#testimonials .below {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 15px;
 }
 
 #testimonials .img {
