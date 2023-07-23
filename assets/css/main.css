@@ -21,7 +21,7 @@ html {
 
 body {
     overflow-x: hidden;
-       background: linear-gradient(360deg, rgba(99, 5, 108, 0.6), rgba(55, 2, 134, 0.6)), url(../img/bg/bg2.svg);
+    background: linear-gradient(360deg, rgba(99, 5, 108, 0.6), rgba(55, 2, 134, 0.6)), url(../img/bg/bg2.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
