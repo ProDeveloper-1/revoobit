@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     height: 700px;
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(../img/bg/bg.jpg);
+    background: linear-gradient(360deg, rgba(99, 5, 108, 0.5), rgba(55, 2, 134, 0.5)), url(../img/bg/bg2.svg);
     background-position: enter;
     background-repeat: no-repeat;
     background-attachment: fixed;
