@@ -211,11 +211,33 @@
 }
 
 #ours .ours-txt .card {
-    border-left: 5px solid var(--primary-color);
     text-align: justify;
+    position: relative;
 }
 
-#ours .ours-txt .card.events {
+#ours .card .left-our {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    color: var(--warning-color);
+    background: var(--primary-color);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+#ours .card .head-our {
+    transform: rotate(-90deg);
+    font-size: 20px;
+}
+
+#ours .card .inner-txt {
+    margin-left: 30px;
+}
+
+#ours .ours-txt .card.vision {
     margin-top: 23px;
 }
 
@@ -240,7 +262,7 @@
         text-align: center;
     }
 
-    #ours .ours-txt .card.events {
+    #ours .ours-txt .card.vision {
         margin-top: 5px;
     }
 }
