@@ -216,7 +216,7 @@
 }
 
 #ours .ours-txt .card.events {
-   margin-top: 23px;
+    margin-top: 23px;
 }
 
 
@@ -239,9 +239,10 @@
         font-size: 25px;
         text-align: center;
     }
+
     #ours .ours-txt .card.events {
         margin-top: 5px;
-     }
+    }
 }
 
 /*=================================================
@@ -259,36 +260,36 @@
 
 #team .row {
     gap: 0.5em;
-    padding-top: 65px;
+    padding-top: 10px;
 }
 
 #team .card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     box-shadow: none;
-    border: 1px solid var(--warning-color);
     position: relative;
 }
 
-#team .fas {
+#team .social {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
     position: absolute;
-    right: 30px;
+    bottom: 0;
+    right: 0;
+    background-color: var(--warning-color);
+    padding: .8rem .5rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-#team .img {
-    border-radius: 50px;
-    height: 100px;
-    width: 100px;
-    position: absolute;
-    top: -60px;
+#team .social a {
+    text-decoration: none;
+    color: var(--light-color);
+    font-size: 18px;
+    transition: opacity .3s;
 }
 
-#team img {
-    width: 100%;
-    height: auto;
-    border-radius: 50px;
-    object-fit: cover;
+#team .social a:hover {
+    opacity: 0.7;
 }
 
 #team .heading-txt {

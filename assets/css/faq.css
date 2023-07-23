@@ -154,6 +154,10 @@
     flex-wrap: nowrap;
 }
 
+#faq .answer {
+    text-align: justify;
+}
+
 #faq .fa-angle-down,
 #faq .fa-angle-up {
     margin-left: 10px;
