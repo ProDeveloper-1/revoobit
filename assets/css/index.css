@@ -320,7 +320,7 @@
 
 @media only screen and (max-width: 786px) {
     #featured {
-        padding: 40px 0 45px 0;
+        padding: 40px 0 0px 0;
     }
 
     #featured .container {
@@ -447,9 +447,6 @@
         object-fit: unset;
     }
 }
-
-
-
 
 /*=================================================
 # Testimonials
