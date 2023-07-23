@@ -407,7 +407,7 @@
 
 #miira-care .btn {
     display: inline-block;
-    background: var(--black-color);
+    background: var(--warning-color);
     color: var(--white-color);
     padding: 0.8rem 1.8rem;
     margin-top: 2rem;
