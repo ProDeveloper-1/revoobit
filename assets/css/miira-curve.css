@@ -27,7 +27,7 @@
     height: 7px;
     bottom: 0;
     top: 65px;
-    background: var(--danger-color);
+    background: var(--warning-color);
     border-radius: 5px;
 }
 
@@ -69,8 +69,8 @@
 
 #miira-care .btn {
     display: inline-block;
-    background: var(--danger-color);
-    color: var(--white-color);
+    background: var(--warning-color);
+    color: var(--black-color);
     padding: 0.8rem 1.8rem;
     margin-top: 2rem;
     cursor: pointer;
@@ -124,7 +124,7 @@
 }
 
 #more .more-txt .card {
-    border-left: 5px solid var(--danger-color);
+    border-left: 5px solid var(--warning-color);
     border-radius: 0px;
 }
 
@@ -172,7 +172,7 @@
     left: 0;
     width: 11px;
     height: 22px;
-    background: var(--danger-color);
+    background: var(--warning-color);
 }
 
 #benefits ul {
@@ -183,9 +183,15 @@
     margin: 15px 0;
 }
 
-#benefits .btn {
+#benefits .btn-warning {
     margin-top: 10px;
     border: none;
+    transition: opacity .3s;
+    background-color: var(--warning-color);
+}
+
+#benefits .btn-warning:hover {
+    opacity: 0.8;
 }
 
 #benefits img {
