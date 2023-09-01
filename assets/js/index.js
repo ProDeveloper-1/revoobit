@@ -1,19 +1,22 @@
 /* ==================================================
-# Initialize Swiper
+# Carousel - image slider
 ===================================================*/
+const carousel = document.querySelector(".carousel");
 
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    slidesPerGroup: 3,
-    loop: true,
-    loopFillGroupWithBlank: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
+let isDragging = false;
+
+const dragStart = () => {
+    isDragging = true;
+    carousel.classList.add("dragging");  
+}
+
+const dragging = (e) => {
+    carousel.scrollLeft = e.pageX;
+    console.log(e.pageX);
+}
+
+carousel.addEventListener("mousemove", dragging);
+
+// carousel.addEventListener("mousemove", (e) => {
+//     carousel.scrollLeft = e.pageX;
+// });
